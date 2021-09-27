@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Flower House</title>
+    <link rel="stylesheet" href="car-flower-house.css" />
+  </head>
+  <body>
+    <svg width="1000" height="1000" viewbox="-15 -185 1000 1000">
+      <g class="house">
+        <rect x="250" y="-100" width="50" height="80" class="semineu" />
+        <polygon points="50 50, 225 -80, 400 50" class="roof" />
+        <rect x="50" y="50" width="350" height="350" class="housebody" />
+        <rect x="260" y="100" width="80" height="80" class="window" />
+        <rect x="100" y="100" width="80" height="80" class="window" />
+        <rect x="175" y="200" width="90" height="200" class="door" />
+      </g>
+      <g class="car">
+        <rect x="250" y="350" rx="30" ry="20" width="430" height="120" class="carbody" />
+        <polygon points="290 350, 580 350, 460 265,360 260 " class="roofcar" />
+        <polygon points="310 350, 560 350, 450 275,370 270 " class="windowcar" />
+
+        <circle cx="340" cy="450" r="40" class="wheel" />
+        <circle cx="580" cy="450" r="40" class="wheel" />
+        <rect x="650" y="370" width="30" height="30" class="light" />
+      </g>
+      <g class="flower">
+        <path d="M 80 365 C 140 400, 150 500, 160 500  " class="tulpina" />
+        <ellipse cx="119" cy="385" rx="10" ry="20" class="frunza" />
+
+        <circle cx="70" cy="350" r="10" class="circlemiddle" />
+        <circle cx="70" cy="328" r="12" class="circle1" />
+        <circle cx="90" cy="340" r="12" class="circle2" />
+        <circle cx="90" cy="360" r="12" class="circle3" />
+        <circle cx="70" cy="372" r="12" class="circle4" />
+        <circle cx="50" cy="360" r="12" class="circle5" />
+        <circle cx="50" cy="340" r="12" class="circle6" />
+
+        <!-- <ellipse cx="75" cy="65" rx="10" ry="5" /> -->
+      </g>
+    </svg>
+    <script src="car.js"></script>
+  </body>
+</html>
