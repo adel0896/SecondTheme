@@ -1,0 +1,48 @@
+#container {
+  animation: move_right 2.58s 1;
+}
+#ball {
+  width: 5vw;
+  height: 5vw;
+  animation: up_n_down 2.58s 1;
+  /* animation-fill-mode: forwards; */
+}
+@keyframes up_n_down {
+  0% {
+    transform: translateY(4vw);
+    animation-timing-function: ease-in;
+  }
+  20% {
+    transform: translateY(32vw);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translateY(9vw);
+    animation-timing-function: ease-in;
+  }
+  /* 25% {
+    background-color: none;
+  }
+  26% {
+    background-color: red;
+  } */
+  100% {
+    transform: translateY(32vw);
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes move_right {
+  0% {
+    transform: translate(-2.5vw);
+  }
+
+  20% {
+    transform: translate(16vw);
+  }
+  50% {
+    transform: translate(25vw);
+  }
+  100% {
+    transform: translate(30vw);
+  }
+}

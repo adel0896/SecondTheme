@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVG Draw</title>
+    <link rel="stylesheet" href="style-basic.css" />
+  </head>
+  <body>
+    <svg width="500" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <g>
+        <rect x="10" y="10" width="30" height="30" class="rectangle" />
+        <rect x="60" y="10" rx="10" ry="10" width="30" height="30" />
+
+        <circle cx="25" cy="75" r="20" class="circle" />
+        <ellipse cx="75" cy="75" rx="20" ry="10" />
+
+        <line x1="10" x2="50" y1="110" y2="150" />
+        <polyline points="10 11 25 90 65 70 75 130 80 125 85 140 90 135 95 150 100 145" stroke="orange" fill="transparent" stroke-width="5" />
+        <!-- <path d="M 10 10 L 25 90 L 65 70 L  75 130 L 80 125 L 85 140 L 90 135 L 95 150 L 100 145 "  stroke="blue" fill="transparent" stroke-width="5"> -->
+        <polygon points="50 160 55 180 70 180 60 190 65 205 50 195 35 205 40 190 30 180 45 180" stroke="green" fill="transparent" stroke-width="5" class="star" />
+        <path d="M 10 10 C 25 90 75 70 75 35  Q 85 240 100 135 L 200 45 S 23 63 23 23 23 " stroke="purple" fill="transparent" stroke-width="5" />
+      </g>
+      <!-- <path d="M20,230 Q40,205 50,230 T90,230" fill="none" stroke="blue" stroke-width="5" /> -->
+    </svg>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+.animate {
+  animation: movefrombottom 0.5s 1 forwards;
+}
+span {
+  display: inline-block;
+  opacity: 0;
+  font-size: 3vw;
+  white-space: pre;
+}
+@keyframes movefrombottom {
+  0% {
+    transform: translateY(1vw);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateY(0vw);
+    opacity: 100%;
+  }
+}

@@ -1,0 +1,33 @@
+.path-to-animate {
+  width: 10vw;
+  height: 10vw;
+  background-color: blue;
+  offset-path: path("M 207 650 L 248 4 C 19 6 59 36 177 217 Q 6 11 -77 189 C -37 24 2 3 206 -50");
+  animation: move 5s infinite ease-in;
+}
+@keyframes move {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
+.ball {
+  width: 3vw;
+  height: 3vw;
+  background-color: red;
+  border-radius: 50%;
+}
+.ballmove {
+  animation: moveballs 2s forwards;
+  /* animation-delay: 1s; */
+}
+@keyframes moveballs {
+  0% {
+    transform: translateX(3vw);
+  }
+  100% {
+    transform: translateX(20vw);
+  }
+}

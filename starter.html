@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      section {
+        height: 100vh;
+      }
+
+      #the_section {
+        background-color: antiquewhite;
+      }
+
+      #the_section2 {
+        background-color: burlywood;
+      }
+
+      div {
+        height: 10vw;
+        width: 10vw;
+      }
+
+      #the_div {
+        background-color: cadetblue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section id="the_section"></section>
+    <section id="the_section2">
+      <div id="the_div"></div>
+    </section>
+    <section></section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <script>
+      "use strict";
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.to("#the_div", { x: "45vw", duration: 5, scrollTrigger: { trigger: "#the_div", markers: true, start: "top 75%", end: "bottom 25%", toggleActions: "play none pause reset" } });
+    </script>
+  </body>
+</html>

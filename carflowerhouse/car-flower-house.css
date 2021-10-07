@@ -1,0 +1,117 @@
+/* house */
+.semineu,
+.roof {
+  fill: brown;
+}
+.housebody {
+  fill: orange;
+}
+.window {
+  stroke: white;
+  fill: lightblue;
+  stroke-width: 7;
+}
+.door {
+  fill: #5e3819;
+}
+/* car */
+.car {
+  cursor: pointer;
+}
+.carbody,
+.roofcar {
+  /* animation-name: move;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: ease-in; */
+  fill: blue;
+}
+.windowcar {
+  fill: lightblue;
+}
+.light {
+  fill: yellow;
+  stroke-width: 5;
+}
+/* flower */
+.tulpina {
+  stroke: green;
+  fill: transparent;
+  stroke-width: 5;
+}
+.frunza {
+  fill: green;
+}
+.circlemiddle {
+  fill: yellow;
+}
+.circle {
+  fill: red;
+}
+.circle1 {
+  fill: blue;
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  transform-origin: 70px 350px;
+  transform-box: view-box;
+}
+.circle2 {
+  fill: red;
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  transform-origin: 70px 350px;
+  transform-box: view-box;
+}
+.circle3 {
+  fill: purple;
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  transform-origin: 70px 350px;
+  transform-box: view-box;
+}
+.circle4 {
+  fill: orchid;
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  transform-origin: 70px 350px;
+  transform-box: view-box;
+}
+.circle5 {
+  fill: lightgreen;
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  transform-origin: 70px 350px;
+  transform-box: view-box;
+}
+.circle6 {
+  fill: lightpink;
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  transform-origin: 70px 350px;
+  transform-box: view-box;
+}
+@keyframes rotate {
+  100% {
+    rotate: 360deg;
+  }
+}
+@keyframes move {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(800px);
+  }
+}

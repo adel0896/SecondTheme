@@ -1,0 +1,7 @@
+.color-selector {
+  width: 5vw;
+  height: 5vw;
+}
+#shadow {
+  pointer-events: none;
+}

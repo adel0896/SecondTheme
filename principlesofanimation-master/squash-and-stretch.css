@@ -1,0 +1,37 @@
+.bounce {
+  animation: bounce 3s infinite;
+  left: 1em;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+    animation-timing-function: ease-in;
+  }
+  48% {
+    transform: translateY(var(--bottom));
+  }
+  52% {
+    transform: translateY(var(--bottom));
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.squash {
+  animation: squash 3s linear infinite;
+  transform-origin: center bottom;
+}
+@keyframes squash {
+  0%,
+  48% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2, 0.8);
+  }
+  54%,
+  100% {
+    transform: scale(1);
+  }
+}

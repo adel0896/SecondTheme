@@ -1,0 +1,49 @@
+g {
+  stroke: pink;
+  fill: purple;
+  stroke-width: 5;
+}
+.rectangle {
+  animation-name: animate;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.circle {
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+@keyframes move {
+  0% {
+    stroke: pink;
+  }
+  50% {
+    stroke: blue;
+  }
+  100% {
+    stroke: yellow;
+  }
+}
+.star {
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+}
+@keyframes rotate {
+  100% {
+    rotate: 360deg;
+  }
+}

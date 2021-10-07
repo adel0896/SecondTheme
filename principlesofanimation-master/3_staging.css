@@ -1,0 +1,19 @@
+section {
+  transform: translateX(-20vw);
+}
+
+.active {
+  animation: moveleft 3s 1;
+  animation-fill-mode: forwards;
+}
+@keyframes moveleft {
+  0% {
+    transform: translateX(-30vw);
+  }
+  100% {
+    transform: translateX(2vw);
+  }
+}
+.hide {
+  display: none;
+}
